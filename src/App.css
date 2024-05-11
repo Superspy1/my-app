@@ -36,3 +36,40 @@
     transform: rotate(360deg);
   }
 }
+
+@keyframes baking-animation {
+  0% { color: pink; transform: scale(1); }
+  50% { color: pink; transform: scale(1.1); }
+  100% { color: pink; transform: scale(1); }
+}
+
+.baking-title {
+  font-family: hi;
+  font-size: 6em;
+  animation: baking-animation 2s infinite;
+}
+
+.baking-title1 {
+  font-family: hi;
+  font-size: 1.3em;
+}
+
+@font-face {
+  font-family: 'hi';
+  src: local('hi'), url(/Users/marcusryan/Downloads/cookie-monster-font/Cookiemonster-gv11.ttf) format('truetype');
+}
+
+.icon:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.roundedImage img {
+  border-radius: 20px; /* Adjust this value to change the roundness of the corners */
+}
+
+.roundedImage .image-gallery-thumbnails img {
+  width: 50px; /* Adjust this value to change the width of the thumbnails */
+  height: 50px; /* Adjust this value to change the height of the thumbnails */
+}
+

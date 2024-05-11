@@ -26,7 +26,7 @@ const images = Object.keys(imagesImported).map(image => ({
       <div style={{
         backgroundColor: '#17171a',
         width: '90%',
-        height: isMobile ? '95%': '85%',
+        height: isMobile ? '94%': '85%',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'space-between',

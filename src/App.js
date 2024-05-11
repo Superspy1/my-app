@@ -26,7 +26,7 @@ const images = Object.keys(imagesImported).map(image => ({
       <div style={{
         backgroundColor: '#17171a',
         width: '90%',
-        height: isMobile ? '94%': '85%',
+        height: isMobile ? '92%': '85%',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'space-between',
@@ -49,7 +49,7 @@ const images = Object.keys(imagesImported).map(image => ({
         <ImageGallery items={images} additionalClass="roundedImage" />
         </div>
         <h4 className="baking-title1" style={{ marginTop: '20vh'}}>Order Now/Support Me!</h4>
-        <div style={{ display: 'flex', justifyContent: 'space-between', width: '200px' , marginBottom: isMobile ? '30vh' :'0'}}>
+        <div style={{ display: 'flex', justifyContent: 'space-between', width: '200px' , marginBottom: isMobile ? '330vh' :'0'}}>
           <a href="mailto:sprinklesbymaioxley@gmail.com" style={{ color: 'pink' }}><FaEnvelope size={40} className="icon" /></a>
           <a href="https://www.facebook.com/SprinklesbyMaiOxley" style={{ color: 'pink' }}><FaFacebook size={40} className="icon" /></a>
           <a href="https://www.instagram.com/sprinklesbymaioxley" style={{ color: 'pink' }}><FaInstagram size={40} className="icon" /></a>

@@ -13,6 +13,7 @@ function importAll(r) {
 const imagesImported = importAll(require.context('./', false, /\.(png|jpe?g|svg)$/));
 
 function App() {
+  const isMobile = window.innerWidth <= 600;
 const images = Object.keys(imagesImported).map(image => ({
   original: imagesImported[image],
   thumbnail: imagesImported[image],
@@ -21,7 +22,7 @@ const images = Object.keys(imagesImported).map(image => ({
 }));
 
   return (
-    <div style={{ backgroundColor: 'pink', height: '100vh', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
+    <div style={{ backgroundColor: 'pink', height: isMobile ? '90vh' : '100vh', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
       <div style={{
         backgroundColor: '#17171a',
         width: '90%',
@@ -43,7 +44,7 @@ const images = Object.keys(imagesImported).map(image => ({
         padding: '20px'
       }}>
         <h1 className="baking-title">Sprinkles</h1>
-        <h4 className="baking-title1" style={{ marginTop: '-10vh' }}>Custom cakes and cupcakes</h4>
+        <h4 className="baking-title1" style={{ marginTop: isMobile ? '-8vh' :'-10vh' }}>Custom cakes and cupcakes</h4>
         <div style={{ width: '220px', height: '200px'}}>
         <ImageGallery items={images} additionalClass="roundedImage" />
         </div>

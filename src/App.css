@@ -73,3 +73,8 @@
   height: 50px; /* Adjust this value to change the height of the thumbnails */
 }
 
+@media (max-width: 600px) {
+  .App-header {
+    height: 70vh; /* Adjust this value to change the height of the card section on mobile */
+  }
+}

@@ -48,7 +48,7 @@ const images = Object.keys(imagesImported).map(image => ({
         <div style={{ width: '220px', height: '200px'}}>
         <ImageGallery items={images} additionalClass="roundedImage" />
         </div>
-        <h4 className="baking-title1" style={{ marginTop: '20vh'}}>Order Now/Support Me!</h4>
+        <h4 className="baking-title1" style={{ marginTop: '20vh'}}>Order Now!</h4>
         <div style={{ display: 'flex', justifyContent: 'space-between', width: '200px' , marginBottom: isMobile ? '330vh' :'0'}}>
           <a href="mailto:sprinklesbymaioxley@gmail.com" style={{ color: 'pink' }}><FaEnvelope size={40} className="icon" /></a>
           <a href="https://www.facebook.com/SprinklesbyMaiOxley" style={{ color: 'pink' }}><FaFacebook size={40} className="icon" /></a>
